@@ -1,0 +1,181 @@
+ .clrwidth {
+            width: 100%!important;
+        }
+
+        .width100 {
+            width: 100%;
+        }
+
+        .member-close {
+            display: none;
+        }
+        /* close-button**/
+
+        .promoclose img {
+            max-width: 30px;
+            margin: 5px 5px;
+        }
+        /* promocode**/
+
+        .promo {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: none;
+        }
+
+        .promo iframe {
+            position: relative;
+            height: 562px;
+            border: none;
+            width: 100%;
+        }
+
+        .promo-iframe-wrapper {
+            position: fixed;
+            width: 65%;
+            margin-left: -37%;
+            left: 50%;
+            top: 50%;
+            height: 600px;
+            margin-top: -300px;
+        }
+
+        .promoclose {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:1195px) {
+            .promoclose {
+                float: right !important;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 1;
+                color: #000;
+                text-shadow: 0 1px 0 #fff;
+                filter: alpha(opacity=20);
+                top: 0px !important;
+                right: 0px !important;
+            }
+        }
+
+        @media screen and (max-width:843px) {
+            .promo-iframe-wrapper {
+                position: fixed;
+                width: 91%;
+                margin-left: -47%;
+                left: 50%;
+                top: 58%;
+                height: 600px;
+                margin-top: -300px;
+            }
+        }
+        /* Loader starts  */
+
+        #loader {
+            background-image: url("/images/logo.gif") no-repeat;
+        }
+
+        #loader-wrapper .loader-section {
+            position: fixed;
+            top: 0;
+            width: 51%;
+            height: 100%;
+            background: #fff;
+            z-index: 1000;
+        }
+
+        #loader-wrapper .loader-section.section-left {
+            left: 0;
+        }
+
+        #loader-wrapper .loader-section.section-right {
+            right: 0;
+        }
+        /* Loaded */
+
+        .loaded #loader-wrapper .loader-section.section-left {
+            -webkit-transform: translateX(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);
+            /* IE 9 */
+            transform: translateX(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        .loaded #loader-wrapper .loader-section.section-right {
+            -webkit-transform: translateX(100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);
+            /* IE 9 */
+            transform: translateX(100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        .loaded #loader {
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .loaded #loader-wrapper {
+            visibility: hidden;
+
+            -webkit-transform: translateY(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);
+            /* IE 9 */
+            transform: translateY(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.3s 1s ease-out;
+            transition: all 0.3s 1s ease-out;
+        }
+
+        @media only screen and (min-width:50px) and (max-width:600px) {
+            .member-close {
+                cursor: pointer;
+                position: fixed;
+                top: 131px;
+                right: 8px;
+                z-index: 99999999999;
+                background-color: #ffffff;
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:599px) and (max-width:999px) {
+            .member-close {
+                cursor: pointer;
+                position: fixed;
+                top: 131px;
+                right: 37px;
+                z-index: 99999999999;
+                background-color: #ffffff;
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:50px) and (max-width:999px) {
+            #loader {
+                background-size: 100% auto;
+                display: block;
+                height: 106px;
+                margin: auto;
+                position: relative;
+                width: 300px;
+            }
+        }
+
+        .language: hover {
+            display: block;
+        }
